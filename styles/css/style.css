@@ -1,10 +1,31 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("../../fonts/Georgia/Georgia.woff2") format("woff2"), url("../../fonts/Georgia/Georgia.woff") format("woff"), url("../../fonts/Georgia/Georgia.ttf") format("ttf");
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Georgia, sans-serif;
+}
+
+.wrapper {
+  background-color: #ebebeb;
+}
+
 .b-header {
+  min-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -21,27 +42,43 @@
   border-radius: 50%;
 }
 
+.b-socialIcons__link_decor:hover {
+  background-color: #ee802f;
+}
+
 .b-socialIcons__icon {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 8px;
 }
 
-.b-socialIcons_indent {
-  margin: 9px 0 8px;
-}
-
 .b-loginNav {
   margin: 19px 0 17px;
 }
 
-body {
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.b-loginNav__link {
+  text-decoration: none;
 }
 
-.wrapper {
-  background-color: #ebebeb;
+.b-loginNav__link_decor {
+  font-size: 12px;
+  line-height: 14px;
+  color: #97455f;
+}
+
+.b-loginNav__link_decor:not(.b-loginNav__link_decor:first-child) {
+  padding-left: 5px;
+}
+
+.b-loginNav__link_decor:not(.b-loginNav__link_decor:last-child) {
+  padding-right: 5px;
+}
+
+.b-loginNav__link_decor:nth-child(n + 2) {
+  border-left: 1px solid #97455f;
+}
+
+.b-loginNav__link_decor:hover {
+  color: #ee802f;
 }
 /*# sourceMappingURL=style.css.map */

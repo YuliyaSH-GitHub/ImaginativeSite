@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Georgia";
+  src: url("../../fonts/Georgia/Georgia.woff2") format("woff2"),
+    url("../../fonts/Georgia/Georgia.woff") format("woff"),
+    url("../../fonts/Georgia/Georgia.ttf") format("ttf");
+  font-weight: 400;
+}
+
 $colorBack: #ebebeb;
 $colorIconBack: #d2d2d2;
 $colorLight: #fff;
+$colorDecor: #97455f;
+$colorHover: #ee802f;
