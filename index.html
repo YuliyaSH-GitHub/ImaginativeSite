@@ -11,16 +11,65 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles/css/style.css" />
   </head>
   <body>
-    <header class="b-header">
-      <div class="b-socialIcons"></div>
-      <div class="b-loginNav"></div>
-    </header>
-    <section class="b-mainNav">
-      <div class="b-mainNav__items"></div>
-    </section>
+    <div class="container">
+      <header class="b-header">
+        <div class="b-socialIcons b-socialIcons_indent">
+          <a class="b-socialIcons__link b-socialIcons__link_decor" href="#"
+            ><img
+              class="b-socialIcons__icon"
+              src="images/socialIcons/icon-linkedin.svg"
+              alt="icon"
+          /></a>
+          <a class="b-socialIcons__link b-socialIcons__link_decor" href="#"
+            ><img
+              class="b-socialIcons__icon"
+              src="images/socialIcons/icon-twitter.svg"
+              alt="icon"
+          /></a>
+          <a class="b-socialIcons__link b-socialIcons__link_decor" href="#"
+            ><img
+              class="b-socialIcons__icon"
+              src="images/socialIcons/icon-pinterest.svg"
+              alt="icon"
+          /></a>
+          <a class="b-socialIcons__link b-socialIcons__link_decor" href="#"
+            ><img
+              class="b-socialIcons__icon"
+              src="images/socialIcons/icon-google-plus.svg"
+              alt="icon"
+          /></a>
+          <a class="b-socialIcons__link b-socialIcons__link_decor" href="#"
+            ><img
+              class="b-socialIcons__icon"
+              src="images/socialIcons/icon-rss.svg"
+              alt="icon"
+          /></a>
+        </div>
+        <div class="b-loginNav">
+          <a class="b-loginNav__link" href="#">Sign Up</a>
+          <a class="b-loginNav__link" href="#">Login</a>
+          <a class="b-loginNav__link" href="#">RSS Feeds</a>
+          <a class="b-loginNav__link" href="#">Archived News</a>
+        </div>
+      </header>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <nav class="b-mainNav">
+          <div class="b-mainNav__items"></div>
+        </nav>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
