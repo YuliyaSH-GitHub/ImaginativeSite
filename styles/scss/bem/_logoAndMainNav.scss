@@ -1,12 +1,18 @@
 .b-logotypeAndSiteSearch {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 58px 0 49px;
 }
 
 .b-logotype {
   display: flex;
   justify-content: space-between;
+  &_adaptive {
+    @media (max-width: 586px) {
+      margin-left: 10px;
+    }
+  }
   &__logo_decor {
     @extend %textUppercase;
     font-size: 36px;
@@ -30,6 +36,11 @@
 .b-siteSearch {
   display: flex;
   height: 33px;
+  &_adaptive {
+    @media (max-width: 586px) {
+      margin: 15px 0 0 10px;
+    }
+  }
   &__input_decor {
     min-width: 218px;
     padding: 10px;
@@ -58,11 +69,15 @@
   &__wrap_backColor {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     min-height: 50px;
     background-color: $colorDecor;
     padding-left: 15px;
     border-radius: 0 5px 0 0;
+    @media (max-width: 696px) {
+      padding: 0;
+    }
   }
   &__wrap_backColor:first-child {
     min-height: 50px;
@@ -70,11 +85,17 @@
     background-color: $colorNav;
     padding: 0 16px;
     border-radius: 5px 0 0 0;
+    @media (max-width: 696px) {
+      padding: 0;
+    }
   }
   &__link {
     display: inline-block;
     text-decoration: none;
     transition-duration: 0.5s;
+    @media (max-width: 696px) {
+      margin-left: 31px;
+    }
 
     &_decor {
       @extend %textUppercase;
@@ -88,5 +109,10 @@
   }
   &__link:nth-child(n + 2) {
     margin-left: 31px;
+  }
+  &__link_first {
+    @media (max-width: 696px) {
+      margin-left: 10px;
+    }
   }
 }
