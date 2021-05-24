@@ -49,6 +49,10 @@
     color: $colorSloganText;
     border-radius: 5px 0 0 5px;
   }
+  &__input_decor:focus {
+    background-color: lighten($colorNav, 50%);
+    color: $colorDark;
+  }
   &__button_decor {
     padding: 10px;
     background-color: $colorDecor;

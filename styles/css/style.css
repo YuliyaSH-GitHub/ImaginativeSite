@@ -29,6 +29,12 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 959px) {
+  .imaginativeContainer {
+    padding: 0 7px;
+  }
+}
+
 .imaginativeContainer_mainMargin {
   margin-top: -80px;
 }
@@ -214,6 +220,11 @@ button {
   line-height: 14px;
   color: #999;
   border-radius: 5px 0 0 5px;
+}
+
+.b-siteSearch__input_decor:focus {
+  background-color: #dfbbc7;
+  color: #333;
 }
 
 .b-siteSearch__button_decor {
