@@ -15,19 +15,37 @@ body {
   background-color: #ebebeb;
 }
 
+.ImaginativeContainer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 .b-header {
+  width: 100%;
   min-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: -15px;
-  margin-left: -15px;
+}
+
+.b-socialIcons {
+  height: 34px;
+}
+
+@media (max-width: 452px) {
+  .b-socialIcons {
+    margin-top: 10px;
+    padding-right: calc(50% - 102px);
+    padding-left: calc(50% - 102px);
+  }
 }
 
 .b-socialIcons__link:nth-child(n + 2) {
@@ -53,7 +71,15 @@ body {
 }
 
 .b-loginNav {
-  margin: 19px 0 17px;
+  text-align: right;
+}
+
+@media (max-width: 452px) {
+  .b-loginNav {
+    margin-top: 10px;
+    padding-right: calc(50% - 126px);
+    padding-left: calc(50% - 126px);
+  }
 }
 
 .b-loginNav__link {
@@ -67,11 +93,11 @@ body {
 }
 
 .b-loginNav__link_decor:not(.b-loginNav__link_decor:first-child) {
-  padding-left: 5px;
+  padding-left: 6px;
 }
 
 .b-loginNav__link_decor:not(.b-loginNav__link_decor:last-child) {
-  padding-right: 5px;
+  padding-right: 3px;
 }
 
 .b-loginNav__link_decor:nth-child(n + 2) {
