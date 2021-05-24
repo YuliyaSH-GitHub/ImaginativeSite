@@ -11,8 +11,8 @@
   height: 34px;
   @media (max-width: 452px) {
     margin-top: 10px;
-    padding-right: calc(50% - 102px);
-    padding-left: calc(50% - 102px);
+    padding-right: #{calc(50% - 102px)};
+    padding-left: #{calc(50% - 102px)};
   }
   &__link:nth-child(n + 2) {
     margin-left: 7px;

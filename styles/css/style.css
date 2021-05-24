@@ -8,6 +8,11 @@
   text-transform: uppercase;
 }
 
+html,
+body {
+  height: 100vh;
+}
+
 body {
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -22,6 +27,10 @@ body {
 .imaginativeContainer {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.imaginativeContainer_mainMargin {
+  margin-top: -80px;
 }
 
 .wrapper_decor {
@@ -295,5 +304,59 @@ button {
   .b-mainNav__link_first {
     margin-left: 10px;
   }
+}
+
+.b-mainContent_padding {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.b-mainContent__textBlock {
+  padding: 15px 29px;
+  width: 455px;
+  min-height: 115px;
+  background-color: #adadad;
+  opacity: 0.7;
+  right: 11px !important;
+  left: 434px;
+  bottom: 28px;
+  color: #0e0d0d;
+}
+
+.b-mainContent__textBlock h5 {
+  font-size: 36px;
+  line-height: 50px;
+  opacity: 1 !important;
+}
+
+.b-mainContent__textBlock p {
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 1 !important;
+}
+
+.b-mainContent__image {
+  width: 900px !important;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.b-mainContent__button_indicators {
+  width: 16px !important;
+  height: 16px !important;
+  background-color: #333 !important;
+  border-radius: 50% !important;
+  opacity: 1 !important;
+}
+
+.b-mainContent__carousel-indicators {
+  bottom: -60px;
+}
+
+.b-mainContent__carousel-indicators .active {
+  background-color: #adadad !important;
 }
 /*# sourceMappingURL=style.css.map */
