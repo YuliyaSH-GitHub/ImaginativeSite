@@ -1,0 +1,16 @@
+.b-logotypeAndSiteSearch {
+  display: flex;
+  justify-content: space-between;
+}
+.b-mainNav {
+  min-height: 270px;
+  &__link {
+    text-decoration: none;
+    &_decor {
+      text-transform: uppercase;
+      color: $colorLight;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+}

@@ -15,9 +15,13 @@ body {
   background-color: #ebebeb;
 }
 
-.ImaginativeContainer {
+.imaginativeContainer {
   max-width: 960px;
   margin: 0 auto;
+}
+
+.wrapper_border {
+  border-top: 1px solid #97455f;
 }
 
 .b-header {
@@ -106,5 +110,29 @@ body {
 
 .b-loginNav__link_decor:hover {
   color: #ee802f;
+}
+
+.b-logotypeAndSiteSearch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.b-mainNav {
+  min-height: 270px;
+}
+
+.b-mainNav__link {
+  text-decoration: none;
+}
+
+.b-mainNav__link_decor {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
 }
 /*# sourceMappingURL=style.css.map */
