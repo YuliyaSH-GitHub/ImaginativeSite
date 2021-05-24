@@ -1,16 +1,92 @@
 .b-logotypeAndSiteSearch {
   display: flex;
   justify-content: space-between;
+  margin: 58px 0 49px;
+}
+
+.b-logotype {
+  display: flex;
+  justify-content: space-between;
+  &__logo_decor {
+    @extend %textUppercase;
+    font-size: 36px;
+    line-height: 36px;
+    color: $colorDark;
+  }
+  &__logo_span {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  &__slogan_decor {
+    font-size: 12px;
+    line-height: 17px;
+    color: $colorSloganText;
+    padding-left: 6px;
+    margin-left: 10px;
+    border-left: 1px solid $colorSloganText;
+    height: 32px;
+  }
+}
+.b-siteSearch {
+  display: flex;
+  height: 33px;
+  &__input_decor {
+    min-width: 218px;
+    padding: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    color: $colorSloganText;
+    border-radius: 5px 0 0 5px;
+  }
+  &__button_decor {
+    padding: 10px;
+    background-color: $colorDecor;
+    @extend %textUppercase;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 600;
+    color: $colorLight;
+    letter-spacing: 1px;
+    border-radius: 0 5px 5px 0;
+  }
 }
 .b-mainNav {
-  min-height: 270px;
+  display: flex;
+  &_layout {
+    margin-bottom: 80px;
+  }
+  &__wrap_backColor {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 50px;
+    background-color: $colorDecor;
+    padding-left: 15px;
+    border-radius: 0 5px 0 0;
+  }
+  &__wrap_backColor:first-child {
+    min-height: 50px;
+    width: 69px;
+    background-color: $colorNav;
+    padding: 0 16px;
+    border-radius: 5px 0 0 0;
+  }
   &__link {
+    display: inline-block;
     text-decoration: none;
+    transition-duration: 0.5s;
+
     &_decor {
-      text-transform: uppercase;
+      @extend %textUppercase;
       color: $colorLight;
       font-size: 12px;
       line-height: 12px;
     }
+  }
+  &__link:hover {
+    color: $colorSloganText;
+  }
+  &__link:nth-child(n + 2) {
+    margin-left: 31px;
   }
 }

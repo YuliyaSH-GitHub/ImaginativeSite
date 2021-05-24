@@ -9,5 +9,12 @@
 $colorBack: #ebebeb;
 $colorIconBack: #d2d2d2;
 $colorLight: #fff;
+$colorDark: #333;
+$colorSloganText: #999;
 $colorDecor: #97455f;
+$colorNav: #6a3144;
 $colorHover: #ee802f;
+
+%textUppercase {
+  text-transform: uppercase;
+}

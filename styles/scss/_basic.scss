@@ -11,6 +11,17 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
-.wrapper_border {
+.wrapper_decor {
   border-top: 1px solid $colorDecor;
+  min-height: 275px;
+}
+
+p {
+  margin: 0;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
 }

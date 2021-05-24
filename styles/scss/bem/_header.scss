@@ -23,6 +23,7 @@
     height: 32px;
     background-color: $colorIconBack;
     border-radius: 50%;
+    transition-duration: 0.5s;
   }
   &__link_decor:hover {
     background-color: $colorHover;
@@ -46,6 +47,7 @@
       font-size: 12px;
       line-height: 14px;
       color: $colorDecor;
+      transition-duration: 0.5s;
     }
     &_decor:not(&_decor:first-child) {
       padding-left: 6px;
