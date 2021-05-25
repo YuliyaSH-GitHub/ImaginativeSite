@@ -17,6 +17,7 @@ $colorHover: #ee802f;
 $colorTextBack: #adadad;
 $colorTextBackBlock: rgba(173, 173, 173, 0.6);
 $colorTextSlider: #383838;
+$colorTextOrciinterdum: #e5e5e5;
 
 %textUppercase {
   text-transform: uppercase;
@@ -48,4 +49,9 @@ $colorTextSlider: #383838;
   font-size: 13px;
   line-height: 18px;
   color: $colorSloganText;
+}
+%clearBoth {
+  content: "";
+  display: block;
+  clear: both;
 }

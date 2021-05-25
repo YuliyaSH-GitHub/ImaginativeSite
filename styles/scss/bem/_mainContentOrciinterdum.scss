@@ -1,0 +1,57 @@
+.b-mainContentOrciinterdum {
+  &_decor {
+    padding: 20px 30px;
+    margin-top: 45px;
+    min-height: 104px;
+    background-color: $colorDecor;
+    color: $colorTextOrciinterdum;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: 425px) {
+      margin-top: 0;
+    }
+
+    a {
+      display: block;
+      @extend %textUppercase;
+      min-width: 280px;
+      padding: 17px 12px;
+      background-color: $colorLight;
+      color: $colorDecor;
+      font-size: 26px;
+      line-height: 28px;
+      border-radius: 7px;
+      text-align: center;
+      @media (max-width: 899px) {
+        margin-top: 20px;
+      }
+      @media (max-width: 425px) {
+        min-width: 200px;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    h5 {
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 8px;
+      @media (max-width: 425px) {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 12px;
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 21px;
+      @media (max-width: 425px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+}

@@ -79,13 +79,12 @@
       display: inline-block;
       @extend %floatLayout;
       cursor: pointer;
+      padding-left: 30px;
     }
   }
 
   &__gridTrack_decor::after {
-    content: "";
-    display: block;
-    clear: both;
+    @extend %clearBoth;
   }
 
   &__img_left {
