@@ -1,0 +1,53 @@
+.b-yourTitleGrid {
+  &_layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(274px, 1fr));
+    grid-template-rows: 16px repeat(2, minmax(82px, 1fr));
+    row-gap: 41px;
+    column-gap: 36px;
+    margin-top: 54px;
+    grid-auto-flow: column;
+    div:first-child {
+      grid-column: 1/-1;
+      position: relative;
+    }
+  }
+  &__delimiter {
+    @extend %decorDelimiter;
+  }
+  &__caption {
+    @extend %textUppercase;
+    @extend %captionYourTitleGrid;
+    left: #{calc(50% - 80px)};
+  }
+  &__gridTrack_decor {
+    img {
+      display: block;
+      width: 64px;
+      height: 64px;
+      @extend %imgObject;
+      float: left;
+      transition-duration: 0.5s;
+      filter: brightness(60%);
+    }
+    img:hover {
+      filter: brightness(90%);
+    }
+    h5 {
+      font-size: 16px;
+      line-height: 22px;
+      color: $colorDecor;
+      @extend %floatLayout;
+      margin-bottom: 18px;
+    }
+    p {
+      @extend %yourTitleGridParagraph;
+      @extend %floatLayout;
+    }
+  }
+  &__gridTrack_decor::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}

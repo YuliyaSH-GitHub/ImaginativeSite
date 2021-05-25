@@ -15,8 +15,37 @@ $colorDecor: #97455f;
 $colorNav: #6a3144;
 $colorHover: #ee802f;
 $colorTextBack: #adadad;
-$colorTextSlider: #0e0d0d;
+$colorTextBackBlock: rgba(173, 173, 173, 0.6);
+$colorTextSlider: #383838;
 
 %textUppercase {
   text-transform: uppercase;
+}
+%decorDelimiter {
+  background-color: $colorBack;
+  height: 5px;
+  width: 100%;
+}
+%captionYourTitleGrid {
+  font-size: 16px;
+  line-height: 19px;
+  color: $colorDark;
+  background-color: $colorLight;
+  padding: 0 7px;
+  z-index: 2;
+  position: absolute;
+  top: -7px;
+}
+%imgObject {
+  object-fit: cover;
+  object-position: center center;
+}
+%floatLayout {
+  overflow: hidden;
+  padding-left: 10px;
+}
+%yourTitleGridParagraph {
+  font-size: 13px;
+  line-height: 18px;
+  color: $colorSloganText;
 }

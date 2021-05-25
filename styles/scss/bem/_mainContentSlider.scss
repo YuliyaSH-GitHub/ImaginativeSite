@@ -7,20 +7,21 @@
     padding: 15px 29px;
     width: 455px;
     min-height: 115px;
-    background-color: $colorTextBack;
-    opacity: 0.7;
+    background-color: $colorTextBackBlock;
     right: 11px !important;
     left: 45%;
     bottom: 28px;
     color: $colorTextSlider;
+    text-align: left;
     @media (max-width: 959px) {
       display: none !important;
     }
 
     h5 {
       font-size: 36px;
-      line-height: 50px;
+      line-height: 40px;
       opacity: 1 !important;
+      margin: 0 0 10px 0;
     }
     p {
       font-size: 16px;

@@ -1,0 +1,86 @@
+.b-previewGrid {
+  &_layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+    grid-template-rows: repeat(2, minmax(177px, 1fr));
+    gap: 30px;
+    margin-top: 46px;
+  }
+  &__titleGoesLeft_layout,
+  &__titleGoesRight_layout {
+    div:first-child {
+      position: relative;
+      margin-bottom: 34px;
+    }
+  }
+  &__titleGoesLeft_layout {
+    h5,
+    p,
+    a {
+      padding-left: 18px;
+    }
+    a {
+      margin-top: 14px;
+    }
+  }
+
+  &__titleGoesRight_layout {
+    h5,
+    a {
+      padding-left: 11px;
+    }
+    p {
+      padding: 0;
+    }
+    h5 {
+      margin-bottom: 7px;
+    }
+  }
+  &__delimiter {
+    @extend %decorDelimiter;
+  }
+  &__caption {
+    @extend %textUppercase;
+    @extend %captionYourTitleGrid;
+    left: #{calc(50% - 80px)};
+  }
+  &__gridTrack_decor {
+    img {
+      display: block;
+
+      @extend %imgObject;
+      float: left;
+    }
+
+    h5 {
+      font-size: 16px;
+      line-height: 19px;
+      color: $colorDark;
+      @extend %floatLayout;
+    }
+    p {
+      margin-top: 15px;
+      @extend %yourTitleGridParagraph;
+      @extend %floatLayout;
+    }
+    a {
+      font-size: 13px;
+      line-height: 13px;
+      color: $colorDecor;
+      display: inline-block;
+      @extend %floatLayout;
+      cursor: pointer;
+    }
+  }
+  &__img_left {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+  }
+
+  &__gridTrack_decor::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
