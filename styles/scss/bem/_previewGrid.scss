@@ -1,10 +1,18 @@
 .b-previewGrid {
   &_layout {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
-    grid-template-rows: repeat(2, minmax(177px, 1fr));
+    grid-template-columns: repeat(2, minmax(430px, 1fr));
+    grid-template-rows: minmax(177px, 1fr);
     gap: 30px;
     margin-top: 46px;
+
+    @media (min-width: 680px) and (max-width: 899px) {
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+    }
+    @media (max-width: 679px) {
+      grid-template-columns: minmax(270px, 1fr);
+      grid-template-rows: repeat(2, minmax(177px, 1fr));
+    }
   }
   &__titleGoesLeft_layout,
   &__titleGoesRight_layout {
@@ -36,6 +44,7 @@
       margin-bottom: 7px;
     }
   }
+
   &__delimiter {
     @extend %decorDelimiter;
   }
@@ -44,14 +53,13 @@
     @extend %captionYourTitleGrid;
     left: #{calc(50% - 80px)};
   }
+
   &__gridTrack_decor {
     img {
       display: block;
-
       @extend %imgObject;
       float: left;
     }
-
     h5 {
       font-size: 16px;
       line-height: 19px;
@@ -62,6 +70,7 @@
       margin-top: 15px;
       @extend %yourTitleGridParagraph;
       @extend %floatLayout;
+      padding-right: 10px;
     }
     a {
       font-size: 13px;
@@ -72,15 +81,16 @@
       cursor: pointer;
     }
   }
-  &__img_left {
-    width: 128px;
-    height: 128px;
-    border-radius: 50%;
-  }
 
   &__gridTrack_decor::after {
     content: "";
     display: block;
     clear: both;
+  }
+
+  &__img_left {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
   }
 }
