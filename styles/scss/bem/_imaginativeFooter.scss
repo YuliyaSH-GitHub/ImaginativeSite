@@ -10,6 +10,28 @@
       "titleLeft  titleMiddle  titleRight"
       "gridTrackFirst  contactDetails  form"
       "gridTrackSecond  contactDetails  form";
+    @media (min-width: 650px) and (max-width: 899px) {
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+      grid-template-areas:
+        "titleLeft  titleLeft"
+        "gridTrackFirst  gridTrackSecond"
+        "titleMiddle  titleRight"
+        "contactDetails  form"
+        "contactDetails  form";
+    }
+    @media (max-width: 649px) {
+      grid-template-columns: minmax(300px, 1fr);
+      grid-template-areas:
+        "titleLeft"
+        "gridTrackFirst"
+        "gridTrackSecond"
+        "titleMiddle"
+        "contactDetails"
+        "contactDetails"
+        "titleRight"
+        "form"
+        "form";
+    }
   }
   &__title:nth-child(1) {
     grid-area: titleLeft;
@@ -35,6 +57,9 @@
 
   &__grid_decor {
     padding: 40px 0 48px 0;
+    @media (max-width: 649px) {
+      padding: 20px 0 28px 0;
+    }
 
     h3 {
       font-size: 16px;
@@ -42,16 +67,29 @@
       color: $colorDark;
       margin-bottom: 0;
     }
+    @media (min-width: 650px) and (max-width: 899px) {
+      padding-left: 15px;
+    }
+    @media (max-width: 649px) {
+      padding-left: 15px;
+    }
   }
 
   &__gridTrack_decor {
     img {
       display: block;
-      width: 95px;
+      min-width: 95px;
       height: 95px;
       @extend %imgObject;
       float: left;
       transition-duration: 0.5s;
+      @media (min-width: 650px) and (max-width: 899px) {
+        margin-right: 15px;
+      }
+      @media (max-width: 779px) {
+        float: none;
+        margin-bottom: 10px;
+      }
     }
     img:hover {
       transform: scale(2);
@@ -63,6 +101,16 @@
       overflow: hidden;
       padding-left: 25px;
       margin-bottom: 19px;
+      @media (min-width: 650px) and (max-width: 899px) {
+        width: 250px;
+        padding-left: 0;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 649px) {
+        width: 280px;
+        padding-left: 0;
+        margin-bottom: 10px;
+      }
     }
     p {
       font-size: 12px;
@@ -70,6 +118,14 @@
       color: $colorSloganText;
       overflow: hidden;
       padding-left: 25px;
+      @media (min-width: 650px) and (max-width: 899px) {
+        width: 250px;
+        padding-left: 0;
+      }
+      @media (max-width: 649px) {
+        width: 280px;
+        padding-left: 0;
+      }
     }
   }
   &__contactDetails_decor {
@@ -91,10 +147,12 @@
   }
 
   &__form {
+    display: flex;
+    flex-direction: column;
     input,
     textarea {
       padding: 6px 10px;
-      width: 225px;
+      width: 245px;
       border-radius: 7px;
     }
     input::placeholder,
