@@ -15,7 +15,8 @@ p {
 }
 
 input,
-button {
+button,
+textarea {
   outline: none;
   border: none;
 }
@@ -39,7 +40,9 @@ button {
     min-height: 325px;
   }
 }
-
+.wrapperFooter_decor {
+  border-top: 5px solid $colorIconBack;
+}
 .yourTitleContainer {
   max-width: 900px;
   margin: 0 auto;

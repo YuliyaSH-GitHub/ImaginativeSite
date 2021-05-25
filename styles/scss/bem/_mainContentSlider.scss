@@ -1,7 +1,15 @@
 .b-mainContent {
-  &_padding {
-    padding: 30px;
-    background-color: $colorLight;
+  &_paddingBottom {
+    padding-bottom: 50px;
+  }
+  &__slider {
+    @media (max-width: 575px) {
+      display: none;
+    }
+    &_padding {
+      padding: 30px;
+      background-color: $colorLight;
+    }
   }
   &__textBlock {
     padding: 15px 29px;
@@ -42,11 +50,7 @@
     object-fit: cover;
     object-position: center center;
   }
-  &__slider {
-    @media (max-width: 575px) {
-      display: none;
-    }
-  }
+
   &__button_indicators {
     width: 16px !important;
     height: 16px !important;
