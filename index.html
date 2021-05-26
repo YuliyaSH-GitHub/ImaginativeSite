@@ -422,7 +422,7 @@
           class="
             b-imaginativeFooter
             b-imaginativeFooter_grid
-            b-imaginativeFooter_decor
+            b-imaginativeFooter_padding
           "
         >
           <h3 class="b-imaginativeFooter__title">Latest From The Blog</h3>
@@ -435,9 +435,9 @@
               b-imaginativeFooter__gridTrack_decor
             "
           >
-            <img src="images/footer/img1.jpg" alt="image" />
-            <h5>Metuervestas mus lacinia</h5>
-            <p>
+            <img class="b-imaginativeFooter__image" src="images/footer/img1.jpg" alt="image" />
+            <h5 class="b-imaginativeFooter__subtitle">Metuervestas mus lacinia</h5>
+            <p class="b-imaginativeFooter__text">
               Convallisijusto vestas mus pellentum aeneansa pibu lum in aliquam
               volut pat integest nulla. Acsed sed nunc at fring maurisusce at
               elis ut vitae laorem.
@@ -446,49 +446,56 @@
           <div
             class="
               b-imaginativeFooter__gridTrack
-              b-imaginativeFooter__gridTrack_decor
             "
           >
-            <img src="images/footer/img2.jpg" alt="image" />
-            <h5>Metuervestas mus lacinia</h5>
-            <p>
+            <img class="b-imaginativeFooter__image" src="images/footer/img2.jpg" alt="image" />
+            <h5 class="b-imaginativeFooter__subtitle">Metuervestas mus lacinia</h5>
+            <p class="b-imaginativeFooter__text">
               Convallisijusto vestas mus pellentum aeneansa pibu lum in aliquam
               volut pat integest nulla. Acsed sed nunc at fring maurisusce at
               elis ut vitae laorem.
             </p>
           </div>
-          <div
-            class="
-              b-imaginativeFooter__contactDetails
-              b-imaginativeFooter__contactDetails_decor
-            "
-          >
-            <p>
+          <div class="b-imaginativeFooter__contactDetails">
+            <p class="b-imaginativeFooter__contactDetails_info">
               Company Name <br />
               Street Name & Number <br />
               Town <br />
               Postcode/Zip <br />
             </p>
-            <address>
+            <address class="b-imaginativeFooter__contactDetails_info">
               Tel: xxxxx xxxxxxxxxx <br />
               Fax: xxxxx xxxxxxxxxx <br />
               Email: <span>contact@mydomain.com</span> <br />
             </address>
-            <p>
+            <p class="b-imaginativeFooter__contactDetails_info">
               <span>Office Hours</span> <br />
               Monday - Friday: 08:00 - 17:30 <br />
               Saturday: 08:00 - 13:00
             </p>
           </div>
           <form class="b-imaginativeFooter__form" action="#">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
+            <input
+              class="b-imaginativeFooter__input b-imaginativeFooter__input_decor"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              class="b-imaginativeFooter__input b-imaginativeFooter__input_decor"
+              type="email"
+              placeholder="Email"
+            />
             <textarea
+              class="b-imaginativeFooter__textarea b-imaginativeFooter__textarea_decor"
               name="footerTextarea"
               id="footerTextarea"
               placeholder="Message"
             ></textarea>
-            <input type="submit" value="submit" />
+            <input
+              class="b-imaginativeFooter__input b-imaginativeFooter__input_decor"
+              type="submit"
+              value="submit"
+            />
           </form>
         </footer>
         <div class="b-imaginativeCopyright"></div>

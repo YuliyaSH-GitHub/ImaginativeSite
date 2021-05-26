@@ -4,7 +4,7 @@
   font-weight: 400;
 }
 
-.b-logotype__logo_decor, .b-siteSearch__button_decor, .b-mainNav__link_decor, .b-yourTitleGrid__caption, .b-previewGrid__caption, .b-mainContentOrciinterdum_decor a, .b-imaginativeFooter__form input[type="submit"] {
+.b-logotype__logo_decor, .b-siteSearch__button_decor, .b-mainNav__link_decor, .b-yourTitleGrid__caption, .b-previewGrid__caption, .b-mainContentOrciinterdum_decor a, .b-imaginativeFooter__input_decor:last-child {
   text-transform: uppercase;
 }
 
@@ -25,7 +25,7 @@
   top: -7px;
 }
 
-.b-yourTitleGrid__gridTrack_decor img, .b-previewGrid__gridTrack_decor img, .b-imaginativeFooter__gridTrack_decor img {
+.b-yourTitleGrid__gridTrack_decor img, .b-previewGrid__gridTrack_decor img, .b-imaginativeFooter__image {
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center center;
@@ -748,13 +748,13 @@ textarea {
   grid-area: titleRight;
 }
 
-.b-imaginativeFooter__gridTrack_decor:nth-child(1) {
+.b-imaginativeFooter__gridTrack:nth-child(1) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: gridTrackFirst;
 }
 
-.b-imaginativeFooter__gridTrack_decor:nth-child(2) {
+.b-imaginativeFooter__gridTrack:nth-child(2) {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: gridTrackSecond;
@@ -774,36 +774,36 @@ textarea {
   grid-area: form;
 }
 
-.b-imaginativeFooter_decor {
+.b-imaginativeFooter_padding {
   padding: 40px 0 48px 0;
 }
 
 @media (max-width: 649px) {
-  .b-imaginativeFooter_decor {
+  .b-imaginativeFooter_padding {
     padding: 20px 0 28px 0;
   }
 }
 
-.b-imaginativeFooter_decor h3 {
+@media (min-width: 650px) and (max-width: 899px) {
+  .b-imaginativeFooter_padding {
+    padding-left: 15px;
+  }
+}
+
+@media (max-width: 649px) {
+  .b-imaginativeFooter_padding {
+    padding-left: 15px;
+  }
+}
+
+.b-imaginativeFooter__title {
   font-size: 16px;
   line-height: 19px;
   color: #333;
   margin-bottom: 0;
 }
 
-@media (min-width: 650px) and (max-width: 899px) {
-  .b-imaginativeFooter_decor {
-    padding-left: 15px;
-  }
-}
-
-@media (max-width: 649px) {
-  .b-imaginativeFooter_decor {
-    padding-left: 15px;
-  }
-}
-
-.b-imaginativeFooter__gridTrack_decor img {
+.b-imaginativeFooter__image {
   display: block;
   min-width: 95px;
   height: 95px;
@@ -813,24 +813,24 @@ textarea {
 }
 
 @media (min-width: 650px) and (max-width: 899px) {
-  .b-imaginativeFooter__gridTrack_decor img {
+  .b-imaginativeFooter__image {
     margin-right: 15px;
   }
 }
 
 @media (max-width: 779px) {
-  .b-imaginativeFooter__gridTrack_decor img {
+  .b-imaginativeFooter__image {
     float: none;
     margin-bottom: 10px;
   }
 }
 
-.b-imaginativeFooter__gridTrack_decor img:hover {
+.b-imaginativeFooter__image:hover {
   -webkit-transform: scale(2);
           transform: scale(2);
 }
 
-.b-imaginativeFooter__gridTrack_decor h5 {
+.b-imaginativeFooter__subtitle {
   font-size: 16px;
   line-height: 16px;
   color: #97455f;
@@ -840,7 +840,7 @@ textarea {
 }
 
 @media (min-width: 650px) and (max-width: 899px) {
-  .b-imaginativeFooter__gridTrack_decor h5 {
+  .b-imaginativeFooter__subtitle {
     width: 250px;
     padding-left: 0;
     margin-bottom: 10px;
@@ -848,14 +848,14 @@ textarea {
 }
 
 @media (max-width: 649px) {
-  .b-imaginativeFooter__gridTrack_decor h5 {
+  .b-imaginativeFooter__subtitle {
     width: 280px;
     padding-left: 0;
     margin-bottom: 10px;
   }
 }
 
-.b-imaginativeFooter__gridTrack_decor p {
+.b-imaginativeFooter__text {
   font-size: 12px;
   line-height: 21px;
   color: #999;
@@ -864,35 +864,34 @@ textarea {
 }
 
 @media (min-width: 650px) and (max-width: 899px) {
-  .b-imaginativeFooter__gridTrack_decor p {
+  .b-imaginativeFooter__text {
     width: 250px;
     padding-left: 0;
   }
 }
 
 @media (max-width: 649px) {
-  .b-imaginativeFooter__gridTrack_decor p {
+  .b-imaginativeFooter__text {
     width: 280px;
     padding-left: 0;
   }
 }
 
-.b-imaginativeFooter__contactDetails_decor p,
-.b-imaginativeFooter__contactDetails_decor address {
+.b-imaginativeFooter__contactDetails_info {
   font-size: 12px;
   line-height: 19px;
   color: #999;
 }
 
-.b-imaginativeFooter__contactDetails_decor address {
+.b-imaginativeFooter__contactDetails_info:nth-child(2) {
   margin: 20px 0;
 }
 
-.b-imaginativeFooter__contactDetails_decor address span {
+.b-imaginativeFooter__contactDetails_info:nth-child(2) span {
   color: #97455f;
 }
 
-.b-imaginativeFooter__contactDetails_decor p span {
+.b-imaginativeFooter__contactDetails_info:nth-child(3) span {
   font-weight: 700;
 }
 
@@ -906,50 +905,45 @@ textarea {
           flex-direction: column;
 }
 
-.b-imaginativeFooter__form input,
-.b-imaginativeFooter__form textarea {
+.b-imaginativeFooter__input, .b-imaginativeFooter__textarea {
   padding: 6px 10px;
   width: 245px;
   border-radius: 7px;
 }
 
-.b-imaginativeFooter__form input::-webkit-input-placeholder,
-.b-imaginativeFooter__form textarea::-webkit-input-placeholder {
+.b-imaginativeFooter__input::-webkit-input-placeholder, .b-imaginativeFooter__textarea::-webkit-input-placeholder {
   font-size: 13px;
   line-height: 20px;
   color: #989898;
 }
 
-.b-imaginativeFooter__form input:-ms-input-placeholder,
-.b-imaginativeFooter__form textarea:-ms-input-placeholder {
+.b-imaginativeFooter__input:-ms-input-placeholder, .b-imaginativeFooter__textarea:-ms-input-placeholder {
   font-size: 13px;
   line-height: 20px;
   color: #989898;
 }
 
-.b-imaginativeFooter__form input::-ms-input-placeholder,
-.b-imaginativeFooter__form textarea::-ms-input-placeholder {
+.b-imaginativeFooter__input::-ms-input-placeholder, .b-imaginativeFooter__textarea::-ms-input-placeholder {
   font-size: 13px;
   line-height: 20px;
   color: #989898;
 }
 
-.b-imaginativeFooter__form input::placeholder,
-.b-imaginativeFooter__form textarea::placeholder {
+.b-imaginativeFooter__input::placeholder, .b-imaginativeFooter__textarea::placeholder {
   font-size: 13px;
   line-height: 20px;
   color: #989898;
 }
 
-.b-imaginativeFooter__form input[type="email"] {
+.b-imaginativeFooter__input_decor:nth-child(2) {
   margin: 10px 0;
 }
 
-.b-imaginativeFooter__form textarea {
+.b-imaginativeFooter__textarea {
   min-height: 110px;
 }
 
-.b-imaginativeFooter__form input[type="submit"] {
+.b-imaginativeFooter__input_decor:last-child {
   margin-top: 10px;
   width: 80px;
   background-color: #97455f;
