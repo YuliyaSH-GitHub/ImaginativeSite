@@ -15,7 +15,7 @@
     padding: 15px 29px;
     width: 455px;
     min-height: 115px;
-    background-color: $colorTextBackBlock;
+    background-color: transparentize($color: $colorTextBack, $amount: 0.4);
     right: 11px !important;
     left: 45%;
     bottom: 28px;

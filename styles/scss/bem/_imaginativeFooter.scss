@@ -1,5 +1,5 @@
 .b-imaginativeFooter {
-  &__grid {
+  &_grid {
     display: grid;
     grid-template-columns: minmax(443px, 2.3fr) minmax(188px, 1fr) minmax(
         225px,
@@ -55,7 +55,7 @@
     grid-area: form;
   }
 
-  &__grid_decor {
+  &_decor {
     padding: 40px 0 48px 0;
     @media (max-width: 649px) {
       padding: 20px 0 28px 0;

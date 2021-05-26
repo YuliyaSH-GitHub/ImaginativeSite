@@ -100,9 +100,9 @@ textarea {
   min-height: 275px;
 }
 
-@media (max-width: 586px) {
+@media (max-width: 575px) {
   .wrapper_decor {
-    min-height: 325px;
+    min-height: 225px;
   }
 }
 
@@ -224,6 +224,12 @@ textarea {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 58px 0 49px;
+}
+
+@media (max-width: 575px) {
+  .b-logotypeAndSiteSearch {
+    margin: 30px 0 28px;
+  }
 }
 
 .b-logotype {
@@ -699,7 +705,7 @@ textarea {
   }
 }
 
-.b-imaginativeFooter__grid {
+.b-imaginativeFooter_grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: minmax(443px, 2.3fr) minmax(188px, 1fr) minmax(225px, 1.2fr);
@@ -709,7 +715,7 @@ textarea {
 }
 
 @media (min-width: 650px) and (max-width: 899px) {
-  .b-imaginativeFooter__grid {
+  .b-imaginativeFooter_grid {
     -ms-grid-columns: (minmax(300px, 1fr))[2];
         grid-template-columns: repeat(2, minmax(300px, 1fr));
         grid-template-areas: "titleLeft  titleLeft" "gridTrackFirst  gridTrackSecond" "titleMiddle  titleRight" "contactDetails  form" "contactDetails  form";
@@ -717,7 +723,7 @@ textarea {
 }
 
 @media (max-width: 649px) {
-  .b-imaginativeFooter__grid {
+  .b-imaginativeFooter_grid {
     -ms-grid-columns: minmax(300px, 1fr);
         grid-template-columns: minmax(300px, 1fr);
         grid-template-areas: "titleLeft" "gridTrackFirst" "gridTrackSecond" "titleMiddle" "contactDetails" "contactDetails" "titleRight" "form" "form";
@@ -768,17 +774,17 @@ textarea {
   grid-area: form;
 }
 
-.b-imaginativeFooter__grid_decor {
+.b-imaginativeFooter_decor {
   padding: 40px 0 48px 0;
 }
 
 @media (max-width: 649px) {
-  .b-imaginativeFooter__grid_decor {
+  .b-imaginativeFooter_decor {
     padding: 20px 0 28px 0;
   }
 }
 
-.b-imaginativeFooter__grid_decor h3 {
+.b-imaginativeFooter_decor h3 {
   font-size: 16px;
   line-height: 19px;
   color: #333;
@@ -786,13 +792,13 @@ textarea {
 }
 
 @media (min-width: 650px) and (max-width: 899px) {
-  .b-imaginativeFooter__grid_decor {
+  .b-imaginativeFooter_decor {
     padding-left: 15px;
   }
 }
 
 @media (max-width: 649px) {
-  .b-imaginativeFooter__grid_decor {
+  .b-imaginativeFooter_decor {
     padding-left: 15px;
   }
 }
@@ -971,6 +977,12 @@ textarea {
 @media (max-width: 649px) {
   .b-copyright_layout div {
     padding: 10px 0;
+  }
+}
+
+@media (max-width: 649px) {
+  .b-copyright_layout div:first-child {
+    padding: 10px 0 0 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

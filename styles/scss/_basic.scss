@@ -36,8 +36,8 @@ textarea {
 .wrapper_decor {
   border-top: 1px solid $colorDecor;
   min-height: 275px;
-  @media (max-width: 586px) {
-    min-height: 325px;
+  @media (max-width: 575px) {
+    min-height: 225px;
   }
 }
 .wrapperFooter_decor {
