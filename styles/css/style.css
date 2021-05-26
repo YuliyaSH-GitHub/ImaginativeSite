@@ -4,7 +4,7 @@
   font-weight: 400;
 }
 
-.b-logotype__logo_decor, .b-siteSearch__button_decor, .b-mainNav__link_decor, .b-yourTitleGrid__caption, .b-previewGrid__caption, .b-mainContentOrciinterdum_decor a, .b-imaginativeFooter__input_decor:last-child {
+.b-logotype__logo_decor, .b-siteSearch__button, .b-mainNav__link, .b-yourTitleGrid__caption, .b-previewGrid__caption, .b-mainContentOrciinterdum_decor a, .b-imaginativeFooter__input_decor:last-child {
   text-transform: uppercase;
 }
 
@@ -281,7 +281,7 @@ textarea {
   }
 }
 
-.b-siteSearch__input_decor {
+.b-siteSearch__input {
   min-width: 218px;
   padding: 10px;
   font-size: 12px;
@@ -295,7 +295,7 @@ textarea {
   color: #333;
 }
 
-.b-siteSearch__button_decor {
+.b-siteSearch__button {
   padding: 10px;
   background-color: #97455f;
   font-size: 12px;
@@ -312,7 +312,7 @@ textarea {
   display: flex;
 }
 
-.b-mainNav_layout {
+.b-mainNav_margin {
   margin-bottom: 80px;
 }
 
@@ -355,6 +355,9 @@ textarea {
 .b-mainNav__link {
   display: inline-block;
   text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
@@ -365,22 +368,16 @@ textarea {
   }
 }
 
-.b-mainNav__link_decor {
-  color: #fff;
-  font-size: 12px;
-  line-height: 12px;
-}
-
 .b-mainNav__link:hover {
   color: #999;
 }
 
-.b-mainNav__link:nth-child(n + 2) {
+.b-mainNav__link_decor:nth-child(n + 2) {
   margin-left: 31px;
 }
 
 @media (max-width: 696px) {
-  .b-mainNav__link_first {
+  .b-mainNav__link_margin {
     margin-left: 10px;
   }
 }
